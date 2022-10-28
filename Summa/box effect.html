@@ -1,0 +1,47 @@
+<!DOCTYPE hmtl>
+<html>
+    <head>
+        <title>Box</title>
+        <style>
+            #s14:hover{
+                cursor:zoom-in;
+            }
+            button:hover{
+                cursor: grab;
+            }
+            .d1{
+                width: 252px;
+                height: 252px;
+                border: 1px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="out">
+            <img src="" alt="">
+            <div class="box">
+            <input type="text" id="s14" disabled>
+            <br>
+            <label>Gender:</label>
+            <div class="d1" onmouseenter="chpoiter()" onmouseleave="chpoiter1()">
+                <img src="1.jpeg" onclick="seenu()" id="img1" width="250" height="250">
+            </div>
+            
+            <input type="radio" name="gen" value="zoom-in" id="rm" checked>
+            <label for="rm">Zoom-in</label>
+
+            <input type="radio" name="gen" value="Zoom-out" id="rf">
+            <label for="rf">Zoom-out</label>
+
+            <input type="radio" name="gen" value="reset" id="rr">
+            <label for="rr">Reset</label>
+            <br>
+
+            <input type="range" min="1" max="20" id="speed">
+            <button id="btn">Print</button>
+           </div>
+
+        <script src="./ks.js"></script>
+    </body>
+</html>
